@@ -10,4 +10,10 @@ Route::get('/', function () {
         ['name' => 'AI need a hero: Innovating the Future with AI ', 'city' => 'Turin', 'country' => 'Italy', 'dates' => '2 May - 9 May 2027', 'deadline' => '15 Mar', 'spot' => 'Mole Antonelliana', 'lat' => 45.0686, 'lng' => 7.6930, 'x' => 25, 'y' => 72, 'apply' => 'https://www.best.eu.org/event/details.jsp?activity=i4afz1o'],
     ];
     return view('home', compact('courses'));
+})->name('home');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::inertia('dashboard', 'Dashboard')->name('dashboard');
 });
+
+require __DIR__.'/settings.php';

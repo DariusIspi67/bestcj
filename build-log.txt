@@ -1,0 +1,56 @@
+Running build... 
+
+> build
+> vp build
+
+[plugin @laravel/vite-plugin-wayfinder] Types generated for actions, routes, form variants
+[33m[plugin laravel:fonts] Optimized font fallbacks require the optional "fontaine" package. Install it, or set "optimizedFallbacks: false" on your fonts to disable the feature.[39m
+transforming...
+✓ 3585 modules transformed.
+rendering chunks...
+computing gzip size...
+public/build/fonts-manifest.json                                 5.74 kB │ gzip:  0.71 kB
+public/build/manifest.json                                      11.15 kB │ gzip:  1.47 kB
+public/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2   16.86 kB
+public/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2   17.23 kB
+public/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2   17.40 kB
+public/build/assets/instrument-sans-400-normal-D1W7dsQl.woff    21.24 kB
+public/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff    21.65 kB
+public/build/assets/instrument-sans-600-normal-B9e8oLYv.woff    21.67 kB
+public/build/assets/fonts-C9MNnjVw.css                           2.35 kB │ gzip:  0.38 kB
+public/build/assets/app-Ds1aFT64.css                            14.91 kB │ gzip:  3.04 kB
+public/build/assets/app-CKaT2_ct.css                            90.72 kB │ gzip: 15.34 kB
+public/build/assets/check-Ye13lPZL.js                            0.14 kB │ gzip:  0.15 kB
+public/build/assets/confirm-z-h9J_hG.js                          0.36 kB │ gzip:  0.22 kB
+public/build/assets/Spinner-sA6B7vUC.js                          0.39 kB │ gzip:  0.29 kB
+public/build/assets/TextLink-Dvnu9zqK.js                         0.52 kB │ gzip:  0.35 kB
+public/build/assets/Label-ql97155n.js                            1.06 kB │ gzip:  0.57 kB
+public/build/assets/VerifyEmail-CoaVAjiY.js                      1.23 kB │ gzip:  0.71 kB
+public/build/assets/InputError-CpGa2CD2.js                       1.41 kB │ gzip:  0.76 kB
+public/build/assets/PasskeyVerify-Cyv4OYqm.js                    1.42 kB │ gzip:  0.81 kB
+public/build/assets/verification-DG6yB8mH.js                     1.48 kB │ gzip:  0.52 kB
+public/build/assets/Dashboard-Dq4kTdZ2.js                        1.50 kB │ gzip:  0.70 kB
+public/build/assets/ForgotPassword-lmvxv9k5.js                   1.70 kB │ gzip:  0.92 kB
+public/build/assets/PasswordInput-DoluPJaX.js                    1.79 kB │ gzip:  0.98 kB
+public/build/assets/ResetPassword-B2rn5hx2.js                    2.20 kB │ gzip:  0.93 kB
+public/build/assets/Appearance-DabaKhA9.js                       2.22 kB │ gzip:  1.13 kB
+public/build/assets/ConfirmPassword-BdocdPbq.js                  2.23 kB │ gzip:  1.05 kB
+public/build/assets/createLucideIcon-ZnuHEy9G.js                 2.53 kB │ gzip:  1.27 kB
+public/build/assets/password-xZMiLpN5.js                         2.73 kB │ gzip:  0.73 kB
+public/build/assets/Register-DTiDk1Z8.js                         2.92 kB │ gzip:  1.20 kB
+public/build/assets/TwoFactorChallenge-D98_rpCd.js               3.00 kB │ gzip:  1.24 kB
+public/build/assets/useForwardExpose-zzKY0QY7.js                 4.49 kB │ gzip:  2.05 kB
+public/build/assets/dialog-C0BNnFbP.js                           5.18 kB │ gzip:  1.78 kB
+public/build/assets/Profile-TvjnNS6D.js                          6.02 kB │ gzip:  2.18 kB
+public/build/assets/Presence-CUt8IAqN.js                         8.95 kB │ gzip:  3.90 kB
+public/build/assets/login-BYcc1hft.js                           12.73 kB │ gzip:  4.88 kB
+public/build/assets/vue-BBw5oWft.js                             13.37 kB │ gzip:  4.45 kB
+public/build/assets/Login-voBcljQj.js                           15.66 kB │ gzip:  5.92 kB
+public/build/assets/Welcome-BiCTQhzS.js                         28.51 kB │ gzip:  6.09 kB
+public/build/assets/Security-CQSxxN7R.js                        28.94 kB │ gzip:  8.65 kB
+public/build/assets/button-DhP1wTMx.js                          30.86 kB │ gzip: 10.12 kB
+public/build/assets/app-Bj_DOuhQ.js                            167.08 kB │ gzip: 47.31 kB
+public/build/assets/wayfinder-lWCAsDPT.js                      247.29 kB │ gzip: 83.90 kB
+
+[32m✓ built in 1.32s[39m
+EXIT CODE: 0 

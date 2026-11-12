@@ -1,0 +1,222 @@
+=== Building cPanel package ===
+[1/6] Building frontend 
+
+> build
+> vp build
+
+[plugin @laravel/vite-plugin-wayfinder] Types generated for actions, routes, form variants
+[33m[plugin laravel:fonts] Optimized font fallbacks require the optional "fontaine" package. Install it, or set "optimizedFallbacks: false" on your fonts to disable the feature.[39m
+transforming...
+✓ 3585 modules transformed.
+rendering chunks...
+computing gzip size...
+public/build/fonts-manifest.json                                 5.74 kB │ gzip:  0.71 kB
+public/build/manifest.json                                      11.15 kB │ gzip:  1.47 kB
+public/build/assets/instrument-sans-400-normal-DRC__1Mx.woff2   16.86 kB
+public/build/assets/instrument-sans-500-normal-Dk9ku72i.woff2   17.23 kB
+public/build/assets/instrument-sans-600-normal-B7fBEWYG.woff2   17.40 kB
+public/build/assets/instrument-sans-400-normal-D1W7dsQl.woff    21.24 kB
+public/build/assets/instrument-sans-500-normal-Z6ESRlEs.woff    21.65 kB
+public/build/assets/instrument-sans-600-normal-B9e8oLYv.woff    21.67 kB
+public/build/assets/fonts-C9MNnjVw.css                           2.35 kB │ gzip:  0.38 kB
+public/build/assets/app-Ds1aFT64.css                            14.91 kB │ gzip:  3.04 kB
+public/build/assets/app-CKaT2_ct.css                            90.72 kB │ gzip: 15.34 kB
+public/build/assets/check-Ye13lPZL.js                            0.14 kB │ gzip:  0.15 kB
+public/build/assets/confirm-z-h9J_hG.js                          0.36 kB │ gzip:  0.22 kB
+public/build/assets/Spinner-sA6B7vUC.js                          0.39 kB │ gzip:  0.29 kB
+public/build/assets/TextLink-Dvnu9zqK.js                         0.52 kB │ gzip:  0.35 kB
+public/build/assets/Label-ql97155n.js                            1.06 kB │ gzip:  0.57 kB
+public/build/assets/VerifyEmail-CoaVAjiY.js                      1.23 kB │ gzip:  0.71 kB
+public/build/assets/InputError-CpGa2CD2.js                       1.41 kB │ gzip:  0.76 kB
+public/build/assets/PasskeyVerify-Cyv4OYqm.js                    1.42 kB │ gzip:  0.81 kB
+public/build/assets/verification-DG6yB8mH.js                     1.48 kB │ gzip:  0.52 kB
+public/build/assets/Dashboard-Dq4kTdZ2.js                        1.50 kB │ gzip:  0.70 kB
+public/build/assets/ForgotPassword-lmvxv9k5.js                   1.70 kB │ gzip:  0.92 kB
+public/build/assets/PasswordInput-DoluPJaX.js                    1.79 kB │ gzip:  0.98 kB
+public/build/assets/ResetPassword-B2rn5hx2.js                    2.20 kB │ gzip:  0.93 kB
+public/build/assets/Appearance-DabaKhA9.js                       2.22 kB │ gzip:  1.13 kB
+public/build/assets/ConfirmPassword-BdocdPbq.js                  2.23 kB │ gzip:  1.05 kB
+public/build/assets/createLucideIcon-ZnuHEy9G.js                 2.53 kB │ gzip:  1.27 kB
+public/build/assets/password-xZMiLpN5.js                         2.73 kB │ gzip:  0.73 kB
+public/build/assets/Register-DTiDk1Z8.js                         2.92 kB │ gzip:  1.20 kB
+public/build/assets/TwoFactorChallenge-D98_rpCd.js               3.00 kB │ gzip:  1.24 kB
+public/build/assets/useForwardExpose-zzKY0QY7.js                 4.49 kB │ gzip:  2.05 kB
+public/build/assets/dialog-C0BNnFbP.js                           5.18 kB │ gzip:  1.78 kB
+public/build/assets/Profile-TvjnNS6D.js                          6.02 kB │ gzip:  2.18 kB
+public/build/assets/Presence-CUt8IAqN.js                         8.95 kB │ gzip:  3.90 kB
+public/build/assets/login-BYcc1hft.js                           12.73 kB │ gzip:  4.88 kB
+public/build/assets/vue-BBw5oWft.js                             13.37 kB │ gzip:  4.45 kB
+public/build/assets/Login-voBcljQj.js                           15.66 kB │ gzip:  5.92 kB
+public/build/assets/Welcome-BiCTQhzS.js                         28.51 kB │ gzip:  6.09 kB
+public/build/assets/Security-CQSxxN7R.js                        28.94 kB │ gzip:  8.65 kB
+public/build/assets/button-DhP1wTMx.js                          30.86 kB │ gzip: 10.12 kB
+public/build/assets/app-Bj_DOuhQ.js                            167.08 kB │ gzip: 47.31 kB
+public/build/assets/wayfinder-lWCAsDPT.js                      247.29 kB │ gzip: 83.90 kB
+
+[32m✓ built in 1.31s[39m
+[2/6] Copying project to C:\BEST\VivaldiSpring2027-deploy 
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :       118       113         5         0         0         0
+   Files :       411       403         8         0         0         0
+   Bytes :    2.45 m    2.32 m   135.4 k         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           18,457,121 Bytes/sec.
+   Speed :            1,056.125 MegaBytes/min.
+   Ended : Thursday, November 12, 2026 9:04:40 PM
+
+[3/6] Cleaning caches 
+[4/6] Installing production PHP packages 
+Installing dependencies from lock file
+Verifying lock file contents can be installed on current platform.
+Package operations: 101 installs, 0 updates, 0 removals
+    0 [>---------------------------]    0 [->--------------------------]
+  - Installing dasprid/enum (1.0.7): Extracting archive
+  - Installing doctrine/inflector (2.1.1): Extracting archive
+  - Installing doctrine/lexer (3.0.3): Extracting archive
+  - Installing dragonmantank/cron-expression (v3.6.1): Extracting archive
+  - Installing symfony/polyfill-mbstring (v1.43.3): Extracting archive
+  - Installing symfony/deprecation-contracts (v3.8.1): Extracting archive
+  - Installing symfony/http-foundation (v8.1.11): Extracting archive
+  - Installing fruitcake/php-cors (v1.4.0): Extracting archive
+  - Installing symfony/polyfill-php82 (v1.43.0): Extracting archive
+  - Installing symfony/polyfill-php80 (v1.43.0): Extracting archive
+  - Installing psr/http-message (2.0): Extracting archive
+  - Installing psr/http-factory (1.1.0): Extracting archive
+  - Installing psr/http-client (1.0.3): Extracting archive
+  - Installing guzzlehttp/psr7 (3.2.0): Extracting archive
+  - Installing guzzlehttp/promises (3.1.0): Extracting archive
+  - Installing guzzlehttp/guzzle (8.3.1): Extracting archive
+  - Installing guzzlehttp/uri-template (v2.0.1): Extracting archive
+  - Installing symfony/polyfill-intl-normalizer (v1.43.0): Extracting archive
+  - Installing symfony/polyfill-intl-grapheme (v1.43.3): Extracting archive
+  - Installing symfony/polyfill-ctype (v1.37.0): Extracting archive
+  - Installing symfony/string (v8.1.10): Extracting archive
+  - Installing psr/container (2.0.2): Extracting archive
+  - Installing symfony/service-contracts (v3.8.1): Extracting archive
+  - Installing symfony/polyfill-php85 (v1.43.0): Extracting archive
+  - Installing symfony/console (v8.1.11): Extracting archive
+  - Installing voku/portable-ascii (2.1.1): Extracting archive
+  - Installing phpoption/phpoption (1.10.0): Extracting archive
+  - Installing graham-campbell/result-type (v1.2.0): Extracting archive
+  - Installing vlucas/phpdotenv (v5.8.0): Extracting archive
+  - Installing symfony/css-selector (v8.1.10): Extracting archive
+  - Installing tijsverkoyen/css-to-inline-styles (v2.4.0): Extracting archive
+  - Installing symfony/var-dumper (v8.1.10): Extracting archive
+  - Installing symfony/polyfill-uuid (v1.43.0): Extracting archive
+  - Installing symfony/uid (v8.1.9): Extracting archive
+  - Installing symfony/routing (v8.1.11): Extracting archive
+  - Installing symfony/process (v8.1.10): Extracting archive
+  - Installing symfony/polyfill-php86 (v1.43.0): Extracting archive
+  - Installing symfony/polyfill-php84 (v1.43.0): Extracting archive
+  - Installing symfony/polyfill-intl-idn (v1.43.0): Extracting archive
+  - Installing symfony/mime (v8.1.10): Extracting archive
+  - Installing psr/event-dispatcher (1.0.0): Extracting archive
+  - Installing symfony/event-dispatcher-contracts (v3.8.1): Extracting archive
+  - Installing symfony/event-dispatcher (v8.1.5): Extracting archive
+  - Installing psr/log (3.0.2): Extracting archive
+  - Installing egulias/email-validator (4.0.4): Extracting archive
+  - Installing symfony/mailer (v8.1.10): Extracting archive
+  - Installing symfony/error-handler (v8.1.10): Extracting archive
+  - Installing symfony/http-kernel (v8.1.11): Extracting archive
+  - Installing symfony/finder (v8.1.11): Extracting archive
+  - Installing ramsey/collection (2.1.1): Extracting archive
+  - Installing brick/math (1.0.0): Extracting archive
+  - Installing ramsey/uuid (4.9.4): Extracting archive
+  - Installing psr/simple-cache (3.0.0): Extracting archive
+  - Installing nunomaduro/termwind (v2.4.1): Extracting archive
+  - Installing symfony/translation-contracts (v3.8.1): Extracting archive
+  - Installing symfony/translation (v8.1.11): Extracting archive
+  - Installing symfony/polyfill-time (v1.42.0): Extracting archive
+  - Installing psr/clock (1.0.0): Extracting archive
+  - Installing symfony/clock (v8.1.9): Extracting archive
+  - Installing carbonphp/carbon-doctrine-types (3.2.1): Extracting archive
+  - Installing nesbot/carbon (3.15.1): Extracting archive
+  - Installing monolog/monolog (3.12.1): Extracting archive
+  - Installing league/uri-interfaces (7.10.0): Extracting archive
+  - Installing league/uri (7.10.0): Extracting archive
+  - Installing league/mime-type-detection (1.17.0): Extracting archive
+  - Installing league/flysystem-local (3.35.3): Extracting archive
+  - Installing league/flysystem (3.36.0): Extracting archive
+  - Installing nette/utils (v4.1.6): Extracting archive
+  - Installing nette/schema (v1.4.0): Extracting archive
+  - Installing dflydev/dot-access-data (v3.0.3): Extracting archive
+  - Installing league/config (v1.2.0): Extracting archive
+  - Installing league/commonmark (2.10.7): Extracting archive
+  - Installing laravel/serializable-closure (v2.1.0): Extracting archive
+  - Installing laravel/prompts (v0.3.27): Extracting archive
+  - Installing laravel/framework (v13.40.0): Extracting archive
+  - Installing inertiajs/inertia-laravel (v3.7.0): Extracting archive
+  - Installing nikic/php-parser (v5.9.0): Extracting archive
+  - Installing laravel/chisel (v0.1.1): Extracting archive
+  - Installing paragonie/constant_time_encoding (v3.1.4): Extracting archive
+  - Installing pragmarx/google2fa (v9.1.0): Extracting archive
+  - Installing spomky-labs/pki-framework (1.6.3): Extracting archive
+  - Installing web-auth/cose-lib (4.8.2): Extracting archive
+  - Installing symfony/serializer (v8.1.11): Extracting archive
+  - Installing symfony/type-info (v8.1.11): Extracting archive
+  - Installing symfony/property-info (v8.1.11): Extracting archive
+  - Installing symfony/property-access (v8.1.11): Extracting archive
+  - Installing symfony/polyfill-php81 (v1.38.1): Extracting archive
+  - Installing spomky-labs/cbor-php (3.4.2): Extracting archive
+  - Installing webmozart/assert (2.5.0): Extracting archive
+  - Installing phpstan/phpdoc-parser (2.4.1): Extracting archive
+  - Installing phpdocumentor/reflection-common (2.2.1): Extracting archive
+  - Installing doctrine/deprecations (1.1.6): Extracting archive
+  - Installing phpdocumentor/type-resolver (2.1.0): Extracting archive
+  - Installing phpdocumentor/reflection-docblock (6.0.3): Extracting archive
+  - Installing web-auth/webauthn-lib (5.3.12): Extracting archive
+  - Installing laravel/passkeys (v0.2.1): Extracting archive
+  - Installing bacon/bacon-qr-code (v3.1.1): Extracting archive
+  - Installing laravel/fortify (v1.41.0): Extracting archive
+  - Installing psy/psysh (v0.12.24): Extracting archive
+  - Installing laravel/tinker (v3.0.2): Extracting archive
+  - Installing laravel/wayfinder (v0.1.23): Extracting archive
+  0/91 [>---------------------------]   0%
+ 10/91 [===>------------------------]  10%
+ 20/91 [======>---------------------]  21%
+ 30/91 [=========>------------------]  32%
+ 40/91 [============>---------------]  43%
+ 50/91 [===============>------------]  54%
+ 60/91 [==================>---------]  65%
+ 70/91 [=====================>------]  76%
+ 80/91 [========================>---]  87%
+ 90/91 [===========================>]  98%
+ 91/91 [============================] 100%
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+
+  [37;44m INFO [39;49m Discovering packages.  
+
+  inertiajs/inertia-laravel [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/fortify [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/passkeys [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/tinker [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  laravel/wayfinder [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nesbot/carbon [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+  nunomaduro/termwind [90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m[90m.[39m [32;1mDONE[39;22m
+
+64 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+[5/6] Creating fresh database 
+
+   INFO  Preparing database.  
+
+  Creating migration table .............................................................................. 14.22ms DONE
+
+   INFO  Running migrations.  
+
+  0001_01_01_000000_create_users_table .................................................................. 29.25ms DONE
+  0001_01_01_000001_create_cache_table .................................................................. 20.46ms DONE
+  0001_01_01_000002_create_jobs_table ................................................................... 28.00ms DONE
+  2024_01_01_000000_create_passkeys_table ............................................................... 18.39ms DONE
+  2025_08_14_170933_add_two_factor_columns_to_users_table ............................................... 14.46ms DONE
+
+[6/6] Zipping to C:\BEST\VivaldiSpring2027-deploy.zip 
+DONE: C:\BEST\VivaldiSpring2027-deploy.zip 
