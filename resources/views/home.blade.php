@@ -12,8 +12,9 @@
   html, body { margin: 0; min-height: 100%; background: #0b0b17; color: #fff; font-family: 'Press Start 2P', monospace; }
   body.game { height: 100%; overflow: hidden; }
   body.classic { overflow: auto; }
-  img { image-rendering: pixelated; display: block; }
-
+  img {
+    display: block;
+}
   /* ================= INTRO ================= */
   #intro { position: fixed; inset: 0; display: grid; place-items: center; background: #0b0b17; z-index: 10; }
   .scene { position: relative; width: min(100vw, 200vh); }
@@ -192,6 +193,23 @@
   .stories .block { padding-top: 48px; padding-bottom: 48px; }
   .story { background: #14142b; border: 4px solid #8fd0f2; padding: 16px; font-size: 14px; line-height: 1.6; }
   .story strong { display: block; color: #f4c430; margin-bottom: 6px; }
+  .story {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.story img {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    opacity: 1 !important;
+    filter: none !important;
+    image-rendering: auto;
+    border-radius: 12px;
+}
 
   .contact { font-size: 15px; line-height: 1.8; }
   .contact b { display: inline-block; min-width: 110px; }
@@ -247,6 +265,7 @@
   <p id="c-where"></p>
   <p id="c-dates"></p>
   <p id="c-deadline"></p>
+  <p id="c-price"></p>
   <div class="row">
     <a id="c-link" href="#" target="_blank" rel="noopener">Explore</a>
     <a id="c-apply" href="#" target="_blank" rel="noopener">Apply</a>
@@ -274,7 +293,7 @@
       <div class="hero-in">
         <div>
           <h1>Spring Courses</h1>
-          <p>Pick a city, spend a couple of weeks learning something new and meet students from all over Europe.</p>
+          <p>Pick a city, spend a couple of days learning something new and meet students from all over Europe.</p>
           <div class="chips">
             <span class="chip">{{ count($courses) }} courses</span>
             <span class="chip">{{ collect($courses)->pluck('country')->unique()->count() }} countries</span>
@@ -294,6 +313,7 @@
             <p class="where">{{ $c['city'] }}, {{ $c['country'] }}</p>
             <p>{{ $c['dates'] }}</p>
             <p>Apply by {{ $c['deadline'] }}</p>
+            <p>Price: {{ $c['price'] }}</p>
             <div class="row">
               <a class="btn" href="{{ $c['apply'] ?? '#' }}">Apply</a>
               <a class="btn alt" target="_blank" rel="noopener"
@@ -317,19 +337,34 @@
       <div class="block">
         <h2>Stories</h2>
         <div class="grid">
-          <div class="story"><strong>Student name, City</strong>Replace this with a real story from a past participant.</div>
-          <div class="story"><strong>Student name, City</strong>Replace this with a real story from a past participant.</div>
-          <div class="story"><strong>Student name, City</strong>Replace this with a real story from a past participant.</div>
+          <div class="story">
+    <div class="story-text">
+        <strong>Sabina Bucea, City</strong>
+        <p>Replace this with a real story from a past participant.</p>
+    </div>
+
+    <img src="/images/Sabina.jpg.jpeg" alt="Sabina Bucea">
+</div>
+</div>
+          <div class="story"><strong>Alexia Adam, City</strong>Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.</div>
+          <div class="story"><strong>Catinca Iacob, City</strong>Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.</div>
         </div>
       </div>
     </section>
 
     <section class="block contact" id="contact">
       <h2>Contact</h2>
-      <p><b>Organiser</b> Name Surname</p>
-      <p><b>Phone</b> +40 000 000 000</p>
-      <p><b>Instagram</b> @@your_handle</p>
-      <p><b>Address</b> Street, number, Cluj-Napoca, Romania</p>
+      <p><b>Vivaldi Responsible:</b> Pohl Adam</p>
+      <p><b>Email:</b>adam.pohl@bestcj.ro</p>
+      <p><b>Phone:</b> +40 771 567 623</p>
+      <p><b>Instagram</b> adam._.pohl2411</p><br>
+      <p><b>BEST Cluj-Napoca</b> 
+      <p>Str. Constantin Daicoviciu Nr. 15, Bloc turn, Cam. 708</p>
+      <p>400020 Cluj-Napoca, jud. Cluj</p>
+      <p>C.P. 821 O.P. 12</p>
+      <p>ROMANIA</p>
+      <p>cluj@BEST.eu.org</p>
+      <p>Web page: bestcj.ro</p>
     </section>
   </main>
 
@@ -381,6 +416,7 @@
       $('#c-where').textContent = c.city + ', ' + c.country;
       $('#c-dates').textContent = c.dates;
       $('#c-deadline').textContent = 'Apply by ' + c.deadline;
+      $('#c-price').textContent = 'Price: ' + c.price;
       $('#c-link').textContent = 'Explore';
       $('#c-link').href = 'https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=' + c.lat + ',' + c.lng;
 
