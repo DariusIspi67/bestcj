@@ -64,14 +64,24 @@
     }
     .scene .scene-wide { display: none; }
     .stack {
-      order: 1; display: block; width: var(--s);
-      background: #0b0b17; border: 4px solid #14142b; box-shadow: 4px 4px 0 #14142b;
-    }
+    order: 1;
+    display: block;
+    width: var(--s);
+    background: #0b0b17;
+    border: 4px solid #14142b;
+    box-shadow: 4px 4px 0 #14142b;
+    overflow: hidden;
+}
     .panel {
-      width: 100%; aspect-ratio: 1;
-      background: url('/images/intro-scene.svg') 0 0 / 200% 100% no-repeat;
-      image-rendering: pixelated;
-    }
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #0b0b17;
+    background-image: url('/images/intro-scene.svg');
+    background-position: 0 0;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
     .panel-glass { background-position: 100% 0; }
     .scene #bubble {
       order: 0; margin-bottom: 22px;
