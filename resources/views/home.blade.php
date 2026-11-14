@@ -189,30 +189,56 @@
                       background: #f4c430; border: 3px solid #14142b; font-family: 'Press Start 2P', monospace; font-size: 12px; }
   .steps b { display: block; margin-bottom: 4px; }
 
-  .stories { background: #0b0b17; color: #fff; }
-  .stories .block { padding-top: 48px; padding-bottom: 48px; }
-  .story { background: #14142b; border: 4px solid #8fd0f2; padding: 16px; font-size: 14px; line-height: 1.6; }
-  .story strong { display: block; color: #f4c430; margin-bottom: 6px; }
-  .story {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  /* TESTIMONIALS */
+.stories {
+    background: #0b0b17;
+    color: #fff;
+    width: 100%;
 }
 
-.story img {
-    width: 200px;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    opacity: 1 !important;
-    filter: none !important;
-    image-rendering: auto;
-    border-radius: 12px;
+.stories .block {
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
+
+.story {
+    background: #14142b;
+    border: 4px solid #8fd0f2;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.story strong {
+    display: block;
+    color: #f4c430;
+    margin-bottom: 6px;
+}
+  .stories .block { padding-top: 48px; padding-bottom: 48px; }
+  .story-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; }
+  .story { flex: 0 1 calc((100% - 36px) / 3); min-width: 240px; background: #14142b; border: 4px solid #8fd0f2;
+           padding: 16px; font-size: 14px; line-height: 1.6; display: flex; flex-direction: column; gap: 12px; }
+  .story strong { display: block; color: #f4c430; margin-bottom: 2px; }
+  .story .where { margin: 0; font-size: 12px; color: #8fd0f2; }
+  .story .quote { margin: 0; }
+  .story-photo { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top;
+                 border-radius: 12px; background: #0b0b17; image-rendering: auto; }
+  .story-avatar { width: 100%; aspect-ratio: 1 / 1; display: grid; place-items: center; border-radius: 12px;
+                  background: #0b0b17; border: 3px dashed #8fd0f2; color: #f4c430;
+                  font-family: 'Press Start 2P', monospace; font-size: 40px; }
+  @media (max-width: 600px) { .story { flex-basis: 100%; } }
 
   .contact { font-size: 15px; line-height: 1.8; }
   .contact b { display: inline-block; min-width: 110px; }
+  .contact-person { display: flex; align-items: center; gap: 32px; }
+  .contact-photo { flex: none; width: 150px; height: 190px; object-fit: cover; object-position: center top;
+                   border: 4px solid #14142b; border-radius: 24px; box-shadow: 4px 4px 0 #14142b; }
+  .contact-info b { min-width: 170px; }
+  .contact-best { margin-top: 32px; }
+  @media (max-width: 650px) {
+    .contact-person { flex-direction: column; align-items: flex-start; }
+    .contact-photo { order: -1; align-self: center; width: 130px; height: 165px; }
+  }
   footer.foot { background: #0b0b17; color: #8fd0f2; text-align: center; padding: 22px 20px; font-size: 13px; }
 
   @media (max-width: 760px) {
@@ -336,36 +362,68 @@
     <section class="stories" id="stories">
       <div class="block">
         <h2>Stories</h2>
-        <div class="grid">
-          <div class="story">
-    <div class="story-text">
-        <strong>Sabina Bucea, City</strong>
-        <p>Replace this with a real story from a past participant.</p>
-    </div>
 
-    <img src="/images/Sabina.jpg.jpeg" alt="Sabina Bucea">
-</div>
-</div>
-          <div class="story"><strong>Alexia Adam, City</strong>Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.</div>
-          <div class="story"><strong>Catinca Iacob, City</strong>Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.</div>
+        {{-- Edit the stories here. 'photo' is optional: leave it null (or the file missing) and a letter avatar is shown. --}}
+        @php
+          $stories = [
+            ['name' => 'Sabina Bucea', 'where' => 'City, Country', 'photo' => 'images/Sabina.jpg.jpeg',
+             'quote' => 'Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.'],
+            ['name' => 'Alexia Adam', 'where' => 'City, Country', 'photo' => 'images/alexia.jpeg',
+             'quote' => 'Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.'],
+            ['name' => 'Catinca Iacob', 'where' => 'City, Country', 'photo' => 'images/catinca.jpeg',
+             'quote' => 'Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.'],
+            ['name' => 'Student name', 'where' => 'City, Country', 'photo' => null,
+             'quote' => 'Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.'],
+            ['name' => 'Student name', 'where' => 'City, Country', 'photo' => null,
+             'quote' => 'Replace this with a real story from a past participant.Replace this with a real story from a past participant.Replace this with a real story from a past participant.'],
+          ];
+        @endphp
+
+        <div class="story-list">
+          @foreach ($stories as $s)
+            <article class="story">
+              @if (!empty($s['photo']) && file_exists(public_path($s['photo'])))
+                <img class="story-photo" src="/{{ $s['photo'] }}" alt="{{ $s['name'] }}" loading="lazy">
+              @else
+                <div class="story-avatar" aria-hidden="true">{{ strtoupper(mb_substr($s['name'], 0, 1)) }}</div>
+              @endif
+              <div>
+                <strong>{{ $s['name'] }}</strong>
+                <p class="where">{{ $s['where'] }}</p>
+              </div>
+              <p class="quote">{{ $s['quote'] }}</p>
+            </article>
+          @endforeach
         </div>
       </div>
     </section>
 
-    <section class="block contact" id="contact">
-      <h2>Contact</h2>
-      <p><b>Vivaldi Responsible:</b> Pohl Adam</p>
-      <p><b>Email:</b>adam.pohl@bestcj.ro</p>
-      <p><b>Phone:</b> +40 771 567 623</p>
-      <p><b>Instagram</b> adam._.pohl2411</p><br>
-      <p><b>BEST Cluj-Napoca</b> 
-      <p>Str. Constantin Daicoviciu Nr. 15, Bloc turn, Cam. 708</p>
-      <p>400020 Cluj-Napoca, jud. Cluj</p>
-      <p>C.P. 821 O.P. 12</p>
-      <p>ROMANIA</p>
-      <p>cluj@BEST.eu.org</p>
-      <p>Web page: bestcj.ro</p>
-    </section>
+    
+<section class="block contact" id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-person">
+        <div class="contact-info">
+            <p><b>Vivaldi Responsible:</b> Pohl Adam</p>
+            <p><b>Email:</b> adam.pohl@bestcj.ro</p>
+            <p><b>Phone:</b> +40 771 567 623</p>
+            <p><b>Instagram:</b> adam._.pohl2411</p>
+        </div>
+
+        <img src="/images/adam.jpg" alt="Pohl Adam - Main Organiser" class="contact-photo">
+    </div>
+
+    <div class="contact-best">
+        <p><b>BEST Cluj-Napoca</b></p>
+        <p>Str. Constantin Daicoviciu Nr. 15, Bloc turn, Cam. 708</p>
+        <p>400020 Cluj-Napoca, jud. Cluj</p>
+        <p>C.P. 821 O.P. 12</p>
+        <p>ROMANIA</p>
+        <p>cluj@BEST.eu.org</p>
+        <p>Web page: bestcj.ro</p>
+    </div>
+</section>
+
   </main>
 
   <footer class="foot">BEST Cluj-Napoca ·  Courses</footer>
