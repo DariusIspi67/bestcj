@@ -161,6 +161,11 @@
   .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-weight: 700; }
   .brand img { width: 38px; }
   .brand small { display: block; font-weight: 400; font-size: 12px; color: #8fd0f2; }
+  .logo-band { background: #ff6a04; padding: 14px 20px; }
+  .logo-band-in { max-width: 1000px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .logo-band img { display: block; width: auto; max-width: 100%; image-rendering: auto; }
+  .logo-courses { height: 54px; }
+  .logo-best { height: 62px; }
   .top nav { display: flex; gap: 18px; margin-left: auto; }
   .top nav a { color: #fff; text-decoration: none; font-size: 14px; }
   .top nav a:hover { color: #f4c430; }
@@ -253,6 +258,9 @@
         line-height: 1.4;
     }
 
+    .logo-band { padding: 10px 14px; }
+    .logo-courses { height: 36px; }
+    .logo-best { height: 42px; }
     .top { flex-wrap: wrap; gap: 8px 10px; padding: 10px 14px; }
     .brand { min-width: 0; }
     .brand span { font-size: 14px; }
@@ -314,6 +322,13 @@
 
 {{-- ============ 3. CLASSIC ============ --}}
 <div id="classic" hidden>
+  <div class="logo-band">
+    <div class="logo-band-in">
+      <a href="#top"><img class="logo-courses" src="/images/BESTcourses.png" alt="BEST Courses"></a>
+      <img class="logo-best" src="/images/BESTlogo.png" alt="BEST Cluj-Napoca">
+    </div>
+  </div>
+
   <header class="top">
     <a class="brand" href="#top">
       <img src="/images/island.svg" alt="">
