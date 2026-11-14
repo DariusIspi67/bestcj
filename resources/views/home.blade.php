@@ -51,7 +51,8 @@
   .pbtn.alt { background: #f4f1de; }
   .pbtn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 #14142b; }
 
-  .panel { display: none; }
+  .stack { display: none; }
+  .panel { display: block; }
 
   /* Portrait phones / tablets: stack the two halves of the scene vertically */
   @media (max-aspect-ratio: 3/4) {
@@ -62,14 +63,16 @@
       display: flex; flex-direction: column; align-items: center; gap: 0;
     }
     .scene .scene-wide { display: none; }
+    .stack {
+      order: 1; display: block; width: var(--s);
+      background: #0b0b17; border: 4px solid #14142b; box-shadow: 4px 4px 0 #14142b;
+    }
     .panel {
-      order: 1;
-      display: block; width: var(--s); aspect-ratio: 1;
+      width: 100%; aspect-ratio: 1;
       background: url('/images/intro-scene.svg') 0 0 / 200% 100% no-repeat;
       image-rendering: pixelated;
-      border: 4px solid #14142b; box-shadow: 4px 4px 0 #14142b;
     }
-    .panel-glass { background-position: 100% 0; margin-top: -4px; }
+    .panel-glass { background-position: 100% 0; }
     .scene #bubble {
       order: 0; margin-bottom: 22px;
       position: relative; left: auto; top: auto; transform: none;
@@ -250,7 +253,16 @@
         line-height: 1.4;
     }
 
-    /* Keep your other existing mobile rules here */
+    .top { flex-wrap: wrap; gap: 8px 10px; padding: 10px 14px; }
+    .brand { min-width: 0; }
+    .brand span { font-size: 14px; }
+    .brand small { font-size: 11px; }
+    .top .play { margin-left: auto; font-size: 12px; padding: 8px 10px; }
+    .top nav { order: 3; width: 100%; margin-left: 0; gap: 6px; justify-content: space-between; }
+    .top nav a { font-size: 13px; white-space: nowrap; }
+    .hero { padding: 40px 20px; }
+    .hero-in { flex-direction: column-reverse; align-items: flex-start; }
+    .hero-img { width: 110px; }
 }
 </style>
 </head>
@@ -260,8 +272,10 @@
 <section id="intro">
   <div class="scene">
     <img class="scene-wide" src="/images/intro-scene.svg" alt="Pirate on a ship looking through a spyglass">
-    <div class="panel panel-ship" aria-hidden="true"></div>
-    <div class="panel panel-glass" aria-hidden="true"></div>
+    <div class="stack" aria-hidden="true">
+      <div class="panel panel-ship"></div>
+      <div class="panel panel-glass"></div>
+    </div>
     <div id="bubble"><span id="speech"></span></div>
     <div class="actions">
       <button class="pbtn" id="go" hidden>Let's sail!</button>
